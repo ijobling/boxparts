@@ -34,6 +34,9 @@ module Autoparts
               category: package.category,
               description: package.description 
             }
+            if package.respond_to? :running?
+              list["#{name} + #{package.version}"]["runable"] = true
+            end
           end
 
           colors_length = ''.bold.magenta.green.length
