@@ -555,7 +555,7 @@ module Autoparts
     end
 
     def install # install compiled code - runs in source directory
-      prefix_path.mkdir
+      prefix_path.mkpath
     end
 
     def post_install # run post install commands - runs in installed package directory
