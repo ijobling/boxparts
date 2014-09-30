@@ -25,17 +25,21 @@ module Autoparts
         end
 
         if packages.length > 0
+          autostart_packages = Autoparts::Autostart.list
           list = {}
           packages.each_pair do |name, package_class|
             package = package_class.new
-            list["#{name} + #{package.version}"] = { 
+            key = "#{name} + #{package.version}" 
+            list[key] = { 
               name: name,
               version: package.version,
               category: package.category,
+              autostart: autostart_packages.include?(name),
               description: package.description 
             }
             if package.respond_to? :running?
-              list["#{name} + #{package.version}"]["runable"] = true
+              list[key]["runable"] = true
+              list[key]["autostart"] = autostart_packages.include?(name)
             end
           end
 

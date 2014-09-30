@@ -10,6 +10,7 @@ require 'autoparts/cli_parser'
 require 'autoparts/dependency'
 require 'autoparts/package_deps'
 require 'autoparts/package'
+require 'autoparts/autostart'
 require 'autoparts/commands/help'
 require 'autoparts/commands/env'
 require 'autoparts/commands/init'
@@ -27,6 +28,7 @@ require 'autoparts/commands/info'
 require 'autoparts/commands/update'
 require 'autoparts/commands/upload'
 require 'autoparts/commands/upgrade'
+require 'autoparts/commands/autostart'
 
 module Autoparts
 end
