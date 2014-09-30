@@ -277,27 +277,31 @@ module Autoparts
     end
 
     def download_archive
-      url  = @source_install ? source_url  : binary_url
-      sha1 = @source_install ? source_sha1 : binary_sha1
-
-      download url, archive_path, sha1
+        url  = @source_install ? source_url  : binary_url
+        sha1 = @source_install ? source_sha1 : binary_sha1
+      
+      if url.length > 0 
+        download url, archive_path, sha1        
+      end
     end
 
     def extract_archive
       extracted_archive_path.rmtree if extracted_archive_path.exist?
       extracted_archive_path.mkpath
       Dir.chdir(extracted_archive_path) do
-        if @source_install
-          case source_filetype
-          when 'tar', 'tar.gz', 'tar.bz2', 'tar.bz', 'tgz', 'tbz2', 'tbz', 'tar.xz', 'txz'
-            execute 'tar', 'xf', archive_path
-          when 'zip'
-            execute 'unzip', '-qq', archive_path
+        if archive_path.exist?
+          if @source_install
+            case source_filetype
+            when 'tar', 'tar.gz', 'tar.bz2', 'tar.bz', 'tgz', 'tbz2', 'tbz', 'tar.xz', 'txz'
+              execute 'tar', 'xf', archive_path
+            when 'zip'
+              execute 'unzip', '-qq', archive_path
+            else
+              execute 'cp', archive_path, extracted_archive_path
+            end
           else
-            execute 'cp', archive_path, extracted_archive_path
+            execute 'tar', 'xf', archive_path
           end
-        else
-          execute 'tar', 'xf', archive_path
         end
       end
     end
@@ -551,6 +555,7 @@ module Autoparts
     end
 
     def install # install compiled code - runs in source directory
+      prefix_path.mkdir
     end
 
     def post_install # run post install commands - runs in installed package directory
