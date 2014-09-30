@@ -33,6 +33,8 @@ commands = {
   'stop'      => Autoparts::Commands::Stop,
   'uninstall' => Autoparts::Commands::Uninstall,
   'update'    => Autoparts::Commands::Update,
+  'autostart' => Autoparts::Commands::Autostart,
+
 }
 
 unless ENV['AUTOPARTS_DEV'].nil?
