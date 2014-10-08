@@ -24,6 +24,12 @@ module Autoparts
         end
       end
 
+      def required_env
+        [
+          'if [ -z "$TMUX" ]; then tmux attach || tmux -f ~/.tmux.config new-session; exit; fi'  
+        ]
+      end
+      
       def install
         Dir.chdir(name_with_version) do
           execute 'make install'
