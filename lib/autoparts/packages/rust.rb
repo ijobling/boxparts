@@ -9,7 +9,7 @@ module Autoparts
       description 'Rust: A safe, concurrent, practical language'
       category Category::PROGRAMMING_LANGUAGES
 
-      source_url 'http://static.rust-lang.org/dist/rust-0.11.0-x86_64-unknown-linux-gnu.tar.gz'
+      source_url 'http://static.rust-lang.org/dist/rust-0.12.0-x86_64-unknown-linux-gnu.tar.gz'
       source_sha1 'af9011e3cdff0f4de81d8d4eefe85d518731b2b1'
       source_filetype 'tar.gz'
 
