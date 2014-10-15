@@ -3,6 +3,10 @@ Changelog:
 
 This page contains a list of recent updates made to the Codio BoxParts. For a full list of all parts see [Box Parts](https://codio.com/s/docs/boxes/box-parts/) 
 
+###October 15th, 2014
+- **Additions**
+  - valgrind (thanks @jesserayadkins)
+
 ###October 10th, 2014
 - **Improvement**
   - cargo-nightly updated to 0.0.1-pre-nightly-861c07f_2014-10-07 (thanks @adamreid)
