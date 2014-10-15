@@ -3,7 +3,7 @@ module Autoparts
     class Valgrind < Package
       name 'valgrind'
       version '3.10.0'
-      description 'Valgrind is a system for debugging and profiling Linux programs.'
+      description 'Valgrind: a system for debugging and profiling Linux programs.'
       category Category::DEVELOPMENT_TOOLS
 
       source_url 'http://valgrind.org/downloads/valgrind-3.10.0.tar.bz2'
