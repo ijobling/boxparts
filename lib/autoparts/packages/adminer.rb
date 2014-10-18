@@ -4,7 +4,7 @@ module Autoparts
       name 'adminer'
       version '4.0.3'
       description 'Adminer: a full-featured database management tool written in PHP'
-      source_url 'http://downloads.sourceforge.net/adminer/adminer-4.0.3.php'
+      source_url 'http://downloads.sourceforge.net/adminer/adminer-4.1.0.php'
       source_sha1 '7d30f34ed6f54842305921073bfd0efe7a135c0a'
       source_filetype 'php'
       category Category::WEB_DEVELOPMENT
