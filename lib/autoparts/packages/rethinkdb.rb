@@ -2,12 +2,12 @@ module Autoparts
   module Packages
     class Rethinkdb < Package
       name 'rethinkdb'
-      version '1.13'
+      version '1.15.1'
       description 'RethinkDB: An open-source distributed database built with love.'
       category Category::DATA_STORES
 
-      source_url 'https://github.com/rethinkdb/rethinkdb/archive/v1.13.x.zip'
-      source_sha1 '7c0ac576a9e9e2200d96bb0db9ca015fd4d6c9d1'
+      source_url 'https://github.com/rethinkdb/rethinkdb/archive/v1.15.1.zip'
+      source_sha1 '8FE9C72BD8B6C1F9B3BF1FF83F0587C301CC34A8'
       source_filetype 'zip'
 
       depends_on 'protobuf'
