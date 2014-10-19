@@ -7,13 +7,13 @@ module Autoparts
       category Category::DATA_STORES
 
       source_url 'https://github.com/rethinkdb/rethinkdb/archive/v1.15.1.zip'
-      source_sha1 '8FE9C72BD8B6C1F9B3BF1FF83F0587C301CC34A8'
+      source_sha1 '8fe9c72bd8b6c1f9b3bf1ff83f0587c301cc34a8'
       source_filetype 'zip'
 
       depends_on 'protobuf'
       
       def compile
-        Dir.chdir("rethinkdb-1.13.x") do
+        Dir.chdir("rethinkdb-1.15.1") do
           args = [
             "--allow-fetch",
             "--prefix=#{prefix_path}",
@@ -66,7 +66,7 @@ module Autoparts
       end
       
       def install
-        Dir.chdir("rethinkdb-1.13.x") do
+        Dir.chdir("rethinkdb-1.15.1") do
           execute 'make', 'install'
         end
       end
