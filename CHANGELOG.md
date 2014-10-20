@@ -3,6 +3,11 @@ Changelog:
 
 This page contains a list of recent updates made to the Codio BoxParts. For a full list of all parts see [Box Parts](https://codio.com/s/docs/boxes/box-parts/) 
 
+###October 19th, 2014
+- **Improvement**
+  - adminer updated to 4.1.0 (thanks @nblackburn)
+  - rethinksv updated to 1.15.1 (thanks @nblackburn)
+
 ###October 15th, 2014
 - **Additions**
   - valgrind (thanks @jesserayadkins)
