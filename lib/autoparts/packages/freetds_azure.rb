@@ -1,7 +1,7 @@
 module Autoparts
   module Packages
-    class Freetds < Package
-      name 'freetds'
+    class FreetdsAzure < Package
+      name 'freetds_azure'
       version '0.91'
       description %{FreeTDS: a set of libraries for Unix and Linux that allows your programs to natively
                     talk to Microsoft SQL Server and Sybase databases.}
