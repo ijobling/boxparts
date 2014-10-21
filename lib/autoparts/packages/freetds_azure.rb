@@ -11,13 +11,13 @@ module Autoparts
       category Category::LIBRARIES
 
       def install
-        Dir.chdir(name_with_version) do
+        Dir.chdir('freetds-0.91') do
           execute 'make', 'install'
         end
       end
 
       def compile
-        Dir.chdir(name_with_version) do
+        Dir.chdir('freetds-0.91') do
           args = [
             "--prefix=#{prefix_path}",
             '--enable-msdblib',
