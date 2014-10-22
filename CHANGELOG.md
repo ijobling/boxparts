@@ -3,6 +3,10 @@ Changelog:
 
 This page contains a list of recent updates made to the Codio BoxParts.
 
+###October 21st, 2014
+- **Additions**
+  - freetds (thanks @jondkinney)
+  
 ###October 20th, 2014
 - **Additions**
   - php5-gettext
