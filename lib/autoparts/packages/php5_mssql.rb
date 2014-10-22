@@ -10,14 +10,14 @@ module Autoparts
       category Category::WEB_DEVELOPMENT
 
       depends_on 'php5'
-      depends_on 'freetds'
+      depends_on 'freetds_azure'
       
       def php_extension_name
         'mssql'
       end
       
       def php_compile_args
-        [ "--with-mssql=#{get_dependency("freetds").prefix_path}" ]
+        [ "--with-mssql=#{get_dependency("freetds_azure").prefix_path}" ]
       end
       
     end
