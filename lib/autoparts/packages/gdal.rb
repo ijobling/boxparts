@@ -7,21 +7,24 @@ module Autoparts
     class Gdal < Package
       name 'gdal'
       version '1.11.1'
-      description 'GDAL - Geospatial Data Abstraction Library'
+      description 'GDAL: a translator library for raster and vector geospatial data formats.'
       source_url 'http://download.osgeo.org/gdal/1.11.1/gdal-1.11.1.tar.gz'
       source_sha1 'e2c67481932ec9fb6ec3c0faadc004f715c4eef4'
       source_filetype 'tar.gz'
       category Category::LIBRARIES
       
       def compile
-        Dir.chdir("gdal-1.11.1") do
-          execute './configure'
+        Dir.chdir(name_with_version) do
+          args = [
+            "--prefix=#{prefix_path}"
+          ]          
+          execute './configure', *args
           execute 'make'
         end
       end
       
       def install
-        Dir.chdir("gdal-1.11.1") do
+        Dir.chdir(name_with_version) do
           execute 'make install'
         end
       end
