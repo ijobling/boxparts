@@ -3,6 +3,10 @@ Changelog:
 
 This page contains a list of recent updates made to the Codio BoxParts.
 
+###October 23rd, 2014
+- **Additions**
+  - gdal (thanks @22kaj22)
+  
 ###October 21st, 2014
 - **Additions**
   - freetds (thanks @jondkinney)
