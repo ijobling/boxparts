@@ -2,7 +2,10 @@ Changelog:
 
 
 This page contains a list of recent updates made to the Codio BoxParts.
-
+###October 28th, 2014
+- **Improvement**
+  - maven updated to 3.2.3 (thanks @tbodt)
+  
 ###October 23rd, 2014
 - **Additions**
   - gdal (thanks @22kaj22)
