@@ -14,10 +14,11 @@ module Autoparts
 
       def install
         FileUtils.rm_rf prefix_path
+        prefix_path.parent.mkpath
         execute 'mv', extracted_archive_path + "apache-maven-#{version}", prefix_path
-        Dir.chdir(prefix_path) do
-          execute 'rm', 'bin/mvn.bat'
-          execute 'rm', 'bin/mvnDebug.bat'
+        Dir.chdir(bin_path) do
+          execute 'rm', 'mvn.bat'
+          execute 'rm', 'mvnDebug.bat'
         end
       end
     end
