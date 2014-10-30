@@ -39,14 +39,19 @@ module Autoparts
         packages.each_pair do |package, version|
           puts package + ' ' + version
         end
-
-        print "Would you like to upgrade? [N/y]: "
-        case $stdin.gets.chomp
+        
+        if $stdin == nil
+          perform_upgrade(packages)
+        else
+          print "Would you like to upgrade? [N/y]: "
+          case $stdin.gets.chomp
           when 'Y', 'y', 'yes'
             perform_upgrade(packages)
           else
             puts 'Upgrade Canceled! To perform the upgrade type "y"'
+          end
         end
+
       end
 
       def perform_upgrade(packages)
