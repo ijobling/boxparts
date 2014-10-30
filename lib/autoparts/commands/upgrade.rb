@@ -40,7 +40,7 @@ module Autoparts
           puts package + ' ' + version
         end
         
-        if $stdin == nil
+        if !$stdin.tty?
           perform_upgrade(packages)
         else
           print "Would you like to upgrade? [N/y]: "
