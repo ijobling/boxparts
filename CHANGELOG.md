@@ -2,6 +2,10 @@ Changelog:
 
 
 This page contains a list of recent updates made to the Codio BoxParts.
+###October 30th, 2014
+- **Improvement**
+  - meteor updated to 1.0
+
 ###October 28th, 2014
 - **Improvement**
   - maven updated to 3.2.3 (thanks @tbodt)
