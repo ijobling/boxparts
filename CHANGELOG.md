@@ -2,6 +2,13 @@ Changelog:
 
 
 This page contains a list of recent updates made to the Codio BoxParts.
+
+###November 5th, 2014
+- **Additions**
+  - swi_prolog
+- **Improvement**
+  - dart updated to 1.7.2 (thanks @tbodt)
+  
 ###October 30th, 2014
 - **Improvement**
   - meteor updated to 1.0
