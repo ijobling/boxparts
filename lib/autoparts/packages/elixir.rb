@@ -5,24 +5,24 @@ module Autoparts
   module Packages
     class Elixir < Package
       name 'elixir'
-      version '0.13.1'
+      version '1.0.2'
       description 'Elixir: A functional, meta-programming aware language built on top of the Erlang VM'
       category Category::PROGRAMMING_LANGUAGES
 
-      source_url 'https://github.com/elixir-lang/elixir/archive/v0.13.1.tar.gz'
-      source_sha1 'e89935019a88e76e25d6f32b1afc1568b9560892'
+      source_url 'https://github.com/elixir-lang/elixir/archive/v1.0.2.tar.gz'
+      source_sha1 '844d32979b565de193c2e81c79ec41f3a9737a72'
       source_filetype 'tar.gz'
 
       depends_on 'erlang'
 
       def compile
-        Dir.chdir('elixir-0.13.1') do
+        Dir.chdir(name_with_version) do
           execute 'make'
         end
       end
 
       def install
-        Dir.chdir('elixir-0.13.1') do
+        Dir.chdir(name_with_version) do
           prefix_path.mkpath
           bin_path.mkpath
           lib_path.mkpath
