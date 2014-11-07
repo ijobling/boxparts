@@ -9,7 +9,7 @@ module Autoparts
       description "PostgreSQL: The world's most advanced open-source database system"
       category Category::DATA_STORES
 
-      source_url 'http://ftp.postgresql.org/pub/source/9.3.5/postgresql-9.3.5.tar.gz'
+      source_url 'https://ftp.postgresql.org/pub/source/v9.3.5/postgresql-9.3.5.tar.gz'
       source_sha1 'f5a888aaba98d637fa6cdf009aebcda10d53d038'
       source_filetype 'tar.gz'
 
