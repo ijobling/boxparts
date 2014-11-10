@@ -3,14 +3,20 @@ Changelog:
 
 This page contains a list of recent updates made to the Codio BoxParts.
 
+###November 11th, 2014
+- **Improvement**
+  - googleappengine updated to 1.9.15
+  - googleappenginego updated to 1.9.15
+  - googleappenginejava updated to 1.9.15
+  
 ###November 5th, 2014
 - **Additions**
   - swi_prolog
 - **Improvement**
   - dart updated to 1.7.2 (thanks @tbodt)
   - elixir updated to 1.0.2
-  - googleappengineg0 updated to 1.9.14
-  - googlecloudsdk updated to 0.9.32
+  - googleappenginego updated to 1.9.14
+  - googlecloudsdk updated to 0.9.35
   
 ###October 30th, 2014
 - **Improvement**
