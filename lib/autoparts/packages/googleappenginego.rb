@@ -2,7 +2,7 @@ module Autoparts
   module Packages
     class GoogleAppEngineGo < Package
       name 'googleappenginego'
-      version '1.9.15
+      version '1.9.15'
       description 'Google App Engine for Go: A CLI for managing Google App Engine cloud services for Go'
       category Category::DEPLOYMENT
 
