@@ -3,6 +3,13 @@ Changelog:
 
 This page contains a list of recent updates made to the Codio BoxParts.
 
+###November 29th, 2014
+- **Additions**
+  - GNU mpfr (thanks @moollaza)
+- **Improvement**
+  - oCaml updated to 4.02.1
+  - OPAM updated to 1.2.0
+
 ###November 11th, 2014
 - **Improvement**
   - googleappengine updated to 1.9.15

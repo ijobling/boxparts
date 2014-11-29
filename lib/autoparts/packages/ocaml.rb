@@ -1,11 +1,13 @@
+# do no forget to build camlp4 after ocaml update
+
 module Autoparts
   module Packages
     class Ocaml < Package
       name 'ocaml'
-      version '4.01.0'
+      version '4.02.1'
       description 'OCaml: an industrial strength programming language supporting functional, imperative and object-oriented styles'
-      source_url 'http://caml.inria.fr/pub/distrib/ocaml-4.01/ocaml-4.01.0.tar.gz'
-      source_sha1 '31ae98051d42e038f4fbc5fd338c4fa5c36744e0'
+      source_url 'http://caml.inria.fr/pub/distrib/ocaml-4.02/ocaml-4.02.1.tar.gz'
+      source_sha1 '6af8c67f2badece81d8e1d1ce70568a16e42313e'
       source_filetype 'tar.gz'
       category Category::PROGRAMMING_LANGUAGES
 
