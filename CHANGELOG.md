@@ -3,6 +3,10 @@ Changelog:
 
 This page contains a list of recent updates made to the Codio BoxParts.
 
+###December 4th, 2014
+- **Additions**
+  - rustup (thanks @sazzer)
+
 ###November 29th, 2014
 - **Additions**
   - GNU mpfr (thanks @moollaza)
