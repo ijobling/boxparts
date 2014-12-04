@@ -12,14 +12,32 @@ module Autoparts
       source_url 'https://static.rust-lang.org/rustup.sh'
       source_filetype 'sh'
 
-      def install
-        File.chmod(0755, "./rustup-latest.sh")
-        execute './rustup-latest.sh', "--prefix=#{prefix_path}"
+      def rustup_executable
+        prefix_path + 'rustup.sh'
       end
       
-      def uninstall
-        File.chmod(0755, "./rustup-latest.sh")
-        execute './rustup-latest.sh', "--prefix=#{prefix_path}", "--uninstall"
+      def install
+        bin_path.mkpath
+        execute 'mv', archive_filename, rustup_executable
+        execute 'chmod', '0755', rustup_executable
+      end
+      
+      def pre_archive
+        rust_uninstall
+      end
+      
+      def rustc_bin
+        bin_path + 'rustc'
+      end
+      
+      def post_install
+        rust_uninstall
+        execute rustup_executable, "--prefix=#{prefix_path}"
+      end
+      
+      def rust_uninstall
+        return if !rustc_bin.exist?
+        execute rustup_executable, "--prefix=#{prefix_path}", "--uninstall"
       end
 
     end
