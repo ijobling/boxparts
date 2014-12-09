@@ -5,22 +5,22 @@ module Autoparts
   module Packages
     class Redis < Package
       name 'redis'
-      version '2.6.16'
+      version '2.8.18'
       description 'Redis: An open-source, in-memory, key-value data store'
       category Category::DATA_STORES
 
-      source_url 'http://download.redis.io/releases/redis-2.6.16.tar.gz'
-      source_sha1 'f94c0f623aaa8c310f9be2a88e81716de01ce0ce'
+      source_url 'http://download.redis.io/releases/redis-2.8.18.tar.gz'
+      source_sha1 '129629262fea2bc60daa542f52457e65e6aa7fd5'
       source_filetype 'tar.gz'
 
       def compile
-        Dir.chdir('redis-2.6.16') do
+        Dir.chdir('redis-2.8.18') do
           execute 'make'
         end
       end
 
       def install
-        Dir.chdir('redis-2.6.16') do
+        Dir.chdir('redis-2.8.18') do
           prefix_path.mkpath
           bin_path.mkpath
           %w(redis-benchmark redis-check-aof redis-check-dump redis-cli redis-sentinel redis-server).each do |f|
