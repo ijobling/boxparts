@@ -105,7 +105,7 @@ module Autoparts
           Restart apache to activate phpMyAdmin.
             $ parts start apache2
 
-          PhpMyAdmin config file is #{myadmin_path}/{phpmyadmin_config}
+          PhpMyAdmin config file is #{myadmin_path}/#{phpmyadmin_config}
 
           PhpMyAdmin URL is http://your-domain-name:3000/phpmyadmin
         EOS
