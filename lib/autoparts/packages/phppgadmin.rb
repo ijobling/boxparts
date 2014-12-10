@@ -22,7 +22,7 @@ module Autoparts
       end
 
       def phppgadmin_path
-        prefix_path + 'phppgadmin'
+        prefix_path + 'phppgadmin/conf'
       end
 
       def phpmyadmin_config
@@ -97,12 +97,12 @@ module Autoparts
 
       def tips
         <<-EOS.unindent
-          Restart apache to activate phpMyAdmin.
+          Restart apache to activate phpPGAdmin.
             $ parts start apache2
 
-          PhpMyAdmin config file is #{phppgadmin_path}/{phpmyadmin_config}
+          PhpPGAdmin config file is #{phppgadmin_path}/#{phpmyadmin_config}
 
-          PhpMyAdmin URL is http://your-domain-name:3000/phppgadmin
+          PhpPGAdmin URL is http://your-domain-name:3000/phppgadmin
         EOS
       end
     end
