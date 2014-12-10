@@ -33,6 +33,32 @@ module Autoparts
       def python_dependency
         @python ||= get_dependency("python2")
       end
+      
+
+      def install
+        required_files.each do |f|
+          execute "mv",
+            python_dependency.site_packages + f,
+            prefix_path + f
+        end
+      end
+
+      def post_install
+        required_files.each do |f|
+          execute "cp", "-rf",
+            prefix_path + f,
+            python_dependency.site_packages + f
+        end
+      end
+
+      def required_files
+        [
+          "virtualenv.py",
+          "virtualenv.pyc",
+          "virtualenv_support",
+          "virtualenv-#{version}-py2.7.egg-info"
+        ]
+      end
     end
   end
 end
