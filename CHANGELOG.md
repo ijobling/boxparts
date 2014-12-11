@@ -7,8 +7,10 @@ This page contains a list of recent updates made to the Codio BoxParts.
 - **Improvement**
   - dart updated to 1.8.3
   - erlang updated to 17.3
+  - mongodb updated to 2.6.6
   - nginx updated to 1.7.8
   - python3 updated to 3.4.2
+  - scala updated to 2.11.4
   
 ###December 4th, 2014
 - **Additions**

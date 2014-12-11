@@ -5,12 +5,12 @@ module Autoparts
   module Packages
     class Scala < Package
       name 'scala'
-      version '2.10.3'
+      version '2.11.4'
       description 'Scala: An object-functional programming language'
       category Category::PROGRAMMING_LANGUAGES
 
-      source_url 'http://www.scala-lang.org/files/archive/scala-2.10.3.tgz'
-      source_sha1 '04cd6237f164940e1e993a127e7cb21297f3b7ae'
+      source_url 'http://www.scala-lang.org/files/archive/scala-2.11.4.tgz'
+      source_sha1 'a6d319b26ccabe9c609fadebc32e797bf9cb1084'
       source_filetype 'tgz'
 
       def install
