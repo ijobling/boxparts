@@ -5,12 +5,12 @@ module Autoparts
   module Packages
     class Sbt < Package
       name 'sbt'
-      version '0.13.5'
+      version '0.13.7'
       description 'Sbt: An interactive build tool for scala'
       category Category::UTILITIES
 
-      source_url 'http://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/sbt-launch/0.13.5/sbt-launch.jar'
-      source_sha1 'f6308bd94bebdd37eb5e2fda732694ce0f34be74'
+      source_url 'http://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/sbt-launch/0.13.7/sbt-launch.jar'
+      source_sha1 'b407b2a76ad72165f806ac7e7ea09132b951ef53'
       source_filetype 'jar'
 
       
