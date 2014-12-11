@@ -3,6 +3,13 @@ Changelog:
 
 This page contains a list of recent updates made to the Codio BoxParts.
 
+###December 11th, 2014
+- **Improvement**
+  - dart updated to 1.8.3
+  - erlang updated to 17.3
+  - nginx updated to 1.7.8
+  - python3 updated to 3.4.2
+  
 ###December 4th, 2014
 - **Additions**
   - rustup (thanks @sazzer)
