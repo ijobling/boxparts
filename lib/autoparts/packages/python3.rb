@@ -8,10 +8,10 @@ module Autoparts
   module Packages
     class Python3 < Python2
       name 'python3'
-      version '3.4.1-2'
+      version '3.4.2'
       description 'Python 3: Next generation of the most friendly Programming Language'
-      source_url 'https://www.python.org/ftp/python/3.4.1/Python-3.4.1.tgz'
-      source_sha1 'e8c1bd575a6ccc2a75f79d9d094a6a29d3802f5d'
+      source_url 'https://www.python.org/ftp/python/3.4.2/Python-3.4.2.tgz'
+      source_sha1 '5c756dded3492a9842efa5a10d610820b8f753e7'
       source_filetype 'tgz'
       category Category::PROGRAMMING_LANGUAGES
 
@@ -25,7 +25,7 @@ module Autoparts
       end
       
       def python_version
-        "Python-3.4.1"
+        "Python-3.4.2"
       end    
         
       def pre_archive
