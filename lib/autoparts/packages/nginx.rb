@@ -2,15 +2,15 @@ module Autoparts
   module Packages
     class Nginx < Package
       name 'nginx'
-      version '1.4.4'
+      version '1.7.8'
       description 'The High Performance Reverse Proxy, Load Balancer, Edge Cache, Origin Server'
-      source_url 'http://nginx.org/download/nginx-1.4.4.tar.gz'
-      source_sha1 '304d5991ccde398af2002c0da980ae240cea9356'
+      source_url 'http://nginx.org/download/nginx-1.7.8.tar.gz'
+      source_sha1 'e8220f42ec9543f81ea4b96bfd2b242c1e4dae49'
       source_filetype 'tar.gz'
       category Category::WEB_DEVELOPMENT
 
       def compile
-        Dir.chdir('nginx-1.4.4') do
+        Dir.chdir('nginx-1.7.8') do
 
           args = [
             "--with-pcre",
@@ -25,7 +25,7 @@ module Autoparts
       end
 
       def install
-        Dir.chdir('nginx-1.4.4') do
+        Dir.chdir('nginx-1.7.8') do
           execute 'make install'
         end
       end
