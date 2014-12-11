@@ -21,7 +21,7 @@ module Autoparts
       
       # requires a fix on version update
       def pre_compile
-		execute 'sed', '-i', "1047 c\\        sqlite_inc_paths = [ '/usr/include', '#{Path.include}', ", 'setup.py'
+        execute 'sed', '-i', "1055 c\\        sqlite_inc_paths = [ '/usr/include', '#{Path.include}', ", 'setup.py'
       end
       
       def python_version
