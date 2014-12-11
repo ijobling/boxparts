@@ -14,7 +14,7 @@ module Autoparts
       source_filetype 'tar.gz'
 
       def compile
-        Dir.chdir("otp-OTP-#{version}") do
+        Dir.chdir("otp_src_#{version}") do
           execute "./otp_build autoconf"
 
           args = [
@@ -34,7 +34,7 @@ module Autoparts
       end
 
       def install
-        Dir.chdir("otp-OTP-#{version}") do
+        Dir.chdir("otp_src_#{version}") do
           bin_path.mkpath
           execute 'make', 'install'
         end
