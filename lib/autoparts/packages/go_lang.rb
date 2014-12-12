@@ -2,10 +2,10 @@ module Autoparts
   module Packages
     class GoLang < Package
       name 'go-lang'
-      version '1.3'
+      version '1.4'
       description 'Go: an open source programming language that makes it easy to build simple, reliable, and efficient software.'
-      source_url 'http://golang.org/dl/go1.3.linux-amd64.tar.gz'
-      source_sha1 'b6b154933039987056ac307e20c25fa508a06ba6'
+      source_url 'http://golang.org/dl/go1.4.linux-amd64.tar.gz'
+      source_sha1 'cd82abcb0734f82f7cf2d576c9528cebdafac4c6'
       source_filetype 'tar.gz'
       category Category::PROGRAMMING_LANGUAGES
 

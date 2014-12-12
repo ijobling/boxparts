@@ -2,6 +2,9 @@ Changelog:
 
 
 This page contains a list of recent updates made to the Codio BoxParts.
+###December 11th, 2014
+- **Improvement**
+  - go-lang updated to 1.4
 
 ###December 11th, 2014
 - **Improvement**
