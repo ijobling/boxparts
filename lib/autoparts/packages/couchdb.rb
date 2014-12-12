@@ -20,8 +20,12 @@ module Autoparts
       depends_on 'spidermonkey'
       depends_on 'erlangr16'
 
+      def name_with_version 
+        "apache-couchdb-#{version}"
+      end
+        
       def compile
-        Dir.chdir('apache-couchdb-1.6.1') do
+        Dir.chdir(name_with_version) do
           args = [
             "--prefix=#{prefix_path}",
             "--with-js-include=#{get_dependency("spidermonkey").include_path}/js" ,
@@ -34,7 +38,7 @@ module Autoparts
       end
 
       def install
-        Dir.chdir('apache-couchdb-1.6.1') do
+        Dir.chdir(name_with_version) do
           execute 'make install'
         end
       end

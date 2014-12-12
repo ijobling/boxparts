@@ -7,6 +7,7 @@ This page contains a list of recent updates made to the Codio BoxParts.
 - **Improvement**
   - ack updated to 2.14
   - apr_util updated to 1.5.4
+  - apache2 updated to 2.4.10
   - beanstalkd updated to 1.10
   - berkeley_db updated to 6.1.19
   - boost updated to 1.57.0
@@ -251,6 +252,28 @@ This page contains a list of recent updates made to the Codio BoxParts.
 - **Additions**:
     - clasp
     - gmp
+    - gringo
+    - scons
+    
+####May 5th 2014
+- **Improvements**: 
+    -  python3 updated to 3.4.0. 
+    -  composer updated to 1.0.0-20140501.  
+    -  opam was rebuilt.
+- **Additions**:
+    -  aspcud
+    -  bison
+    -  boost
+    -  flex
+    -  glib
+    -  htop
+    -  libffi
+    -  libpcap
+    -  Midnight Commander (`mc`)
+    -  ncurses
+    -  racket
+    -  re2c
+p
     - gringo
     - scons
     

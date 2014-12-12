@@ -6,8 +6,8 @@ module Autoparts
       description 'Cabal: A system for building and packaging Haskell libraries and programs'
       category Category::DEVELOPMENT_TOOLS
 
-      source_url 'https://www.haskell.org/cabal/release/cabal-1.20.0.2/Cabal-1.20.0.2.tar.gz'
-      source_sha1 'e7d0c112ed023cc8074f5effbac09b04c61cf487'
+      source_url 'http://www.haskell.org/cabal/release/cabal-install-1.20.0.2/cabal-install-1.20.0.2.tar.gz'
+      source_sha1 'e9b3843270b8f5969a4e1205263e59439bc35692'
       source_filetype 'tar.gz'
 
       depends_on 'ghc'

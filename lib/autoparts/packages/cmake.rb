@@ -9,19 +9,19 @@ module Autoparts
       description 'CMake: A cross-platform, open-source build system'
       category Category::DEVELOPMENT_TOOLS
 
-      source_url 'http://www.cmake.org/files/v3.0/cmake-3.0.2-Linux-i386.tar.gz'
-      source_sha1 '144f4b56d451bea777eb43604eb1b9813ffa2ea6'
+      source_url 'http://www.cmake.org/files/v3.0/cmake-3.0.2.tar.gz'
+      source_sha1 '379472e3578902a1d6f8b68a9987773151d6f21a'
       source_filetype 'tar.gz'
 
       def compile
-        Dir.chdir('cmake-3.0.2') do
+        Dir.chdir(name_with_version) do
           execute './bootstrap', "--prefix=#{prefix_path}"
           execute 'make'
         end
       end
 
       def install
-        Dir.chdir('cmake-3.0.2') do
+        Dir.chdir(name_with_version) do
           execute 'make install'
         end
       end

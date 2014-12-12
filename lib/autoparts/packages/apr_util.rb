@@ -9,7 +9,7 @@ module Autoparts
       description 'Apache Portable Runtime Utilities: Utilities that provide a predictable and consistent interface to underlying platform-specific implementations'
       category Category::UTILITIES
 
-      source_url 'http://apache.mirrors.timporter.net//apr/apr-util-1.5.4.tar.gz'
+      source_url 'http://apache.mirrors.timporter.net/apr/apr-util-1.5.4.tar.gz'
       source_sha1 '72cc3ac693b52fb831063d5c0de18723bc8e0095'
       source_filetype 'tar.gz'
 

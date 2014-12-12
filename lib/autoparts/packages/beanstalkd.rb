@@ -11,13 +11,13 @@ module Autoparts
       source_filetype 'tar.gz'
 
       def compile
-        Dir.chdir('beanstalkd-1.10') do
+        Dir.chdir(name_with_version) do
           execute 'make'
         end
       end
 
       def install
-        Dir.chdir('beanstalkd-1.10') do
+        Dir.chdir(name_with_version) do
           args = [
             "PREFIX=#{prefix_path}"
           ]

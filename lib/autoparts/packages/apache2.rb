@@ -5,19 +5,23 @@ module Autoparts
   module Packages
     class Apache2 < Package
       name 'apache2'
-      version '2.4.9'
+      version '2.4.10'
       description 'Apache Web Server: A cross-platform open-source HTTP server for modern operating systems'
       category Category::WEB_DEVELOPMENT
 
-      source_url 'http://www.us.apache.org/dist//httpd/httpd-2.4.9.tar.gz'
-      source_sha1 '50496e51605a3d852c183a7c667c25bcc7ee658d'
+      source_url 'http://www.us.apache.org/dist/httpd/httpd-2.4.10.tar.gz'
+      source_sha1 '9682272d16f0b2a7f1c7bbb9816283e3ab161d66'
       source_filetype 'tar.gz'
 
       depends_on 'apr'
       depends_on 'apr_util'
 
+      def name_with_version
+        "httpd-#{version}"
+      end
+      
       def compile
-        Dir.chdir('httpd-2.4.9') do
+        Dir.chdir(name_with_version) do
           File.open('config.layout', 'a') do |f|
             f.write config_layout_file
           end
@@ -39,7 +43,7 @@ module Autoparts
       end
 
       def install
-        Dir.chdir('httpd-2.4.9') do
+        Dir.chdir(name_with_version) do
           execute 'make install'
         end
       end
