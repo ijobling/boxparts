@@ -5,15 +5,15 @@ module Autoparts
   module Packages
     class CouchDB < Package
       name 'couchdb'
-      version '1.5.1'
+      version '1.6.1'
 
       description "CouchDB: A Database for the Web"
 
       category Category::DATA_STORES
 
-      source_url 'http://www.apache.org/dist/couchdb/source/1.5.1/apache-couchdb-1.5.1.tar.gz'
+      source_url 'http://apache.mirrors.timporter.net/couchdb/source/1.6.1/apache-couchdb-1.6.1.tar.gz'
 
-      source_sha1 '5340c79f8f9e11742b723f92e2251d4d59b8247c'
+      source_sha1 '6275f3818579d7b307052e9735c42a8a64313229'
 
       source_filetype 'tar.gz'
 
@@ -21,7 +21,7 @@ module Autoparts
       depends_on 'erlangr16'
 
       def compile
-        Dir.chdir('apache-couchdb-1.5.1') do
+        Dir.chdir('apache-couchdb-1.6.1') do
           args = [
             "--prefix=#{prefix_path}",
             "--with-js-include=#{get_dependency("spidermonkey").include_path}/js" ,
@@ -34,7 +34,7 @@ module Autoparts
       end
 
       def install
-        Dir.chdir('apache-couchdb-1.5.1') do
+        Dir.chdir('apache-couchdb-1.6.1') do
           execute 'make install'
         end
       end

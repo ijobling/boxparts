@@ -2,12 +2,12 @@ module Autoparts
   module Packages
     class Dropbox < Package
       name 'dropbox'
-      version '2.6.27'
+      version '3.0.3'
       description 'Dropbox: a cloud synchronization service.'
       category Category::UTILITIES
 
       source_url 'http://www.dropbox.com/download/?plat=lnx.x86_64'
-      source_sha1 '004a72d46ebd8a28cc96cc9baf05b233219aba3c'
+      source_sha1 '6d721bc8f73155e44e84cdecdc7940d40811d985'
       source_filetype 'tar.gz'
 
       def install
@@ -58,9 +58,8 @@ module Autoparts
       
       def tips
         <<-EOS.unindent
-        
-        Please refer to https://codio.com/s/docs/specifics/dropbox/ for a comprehensive explanation of how to configure Codio for Dropbox operations.
-            
+       
+                   
         EOS
       end
     end

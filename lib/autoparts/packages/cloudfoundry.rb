@@ -5,12 +5,12 @@ module Autoparts
   module Packages
     class Cloudfoundry < Package
       name 'cloudfoundry'
-      version 'v6.0.1'
+      version 'v6.8.0'
       description 'Cloud Foundry: An open CLI for managing cloud services'
       category Category::DEPLOYMENT
 
-      source_url 'https://github.com/cloudfoundry/cli/releases/download/v6.0.1/cf-linux-amd64.tgz'
-      source_sha1 'e5ab1f9d211f85a1e88e635662be47335313c23b'
+      source_url 'https://cli.run.pivotal.io/stable?release=linux64-binary&version=6.8.0&source=github-rel'
+      source_sha1 'f0ecd8c1dda45b523860fb64fbb892f242c2f0a1'
       source_filetype 'tgz'
 
       def install

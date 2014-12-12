@@ -5,23 +5,23 @@ module Autoparts
   module Packages
     class CMake < Package
       name 'cmake'
-      version '2.8.11.2'
+      version '3.0.2'
       description 'CMake: A cross-platform, open-source build system'
       category Category::DEVELOPMENT_TOOLS
 
-      source_url 'http://www.cmake.org/files/v2.8/cmake-2.8.11.2.tar.gz'
-      source_sha1 '31f217c9305add433e77eff49a6eac0047b9e929'
+      source_url 'http://www.cmake.org/files/v3.0/cmake-3.0.2-Linux-i386.tar.gz'
+      source_sha1 '144f4b56d451bea777eb43604eb1b9813ffa2ea6'
       source_filetype 'tar.gz'
 
       def compile
-        Dir.chdir('cmake-2.8.11.2') do
+        Dir.chdir('cmake-3.0.2') do
           execute './bootstrap', "--prefix=#{prefix_path}"
           execute 'make'
         end
       end
 
       def install
-        Dir.chdir('cmake-2.8.11.2') do
+        Dir.chdir('cmake-3.0.2') do
           execute 'make install'
         end
       end

@@ -2,8 +2,21 @@ Changelog:
 
 
 This page contains a list of recent updates made to the Codio BoxParts.
-###December 11th, 2014
+
+###December 12th, 2014
 - **Improvement**
+  - ack updated to 2.14
+  - apr_util updated to 1.5.4
+  - beanstalkd updated to 1.10
+  - berkeley_db updated to 6.1.19
+  - boost updated to 1.57.0
+  - cabal updated to 1.20.0.2
+  - cloudfoundry updated to 6.8.0
+  - cmake updated to 3.0.2
+  - couchdb updated to 1.6.1
+  - dropbox updated to 3.0.3
+  - elasticbeanstalk updated t0 2.6.4
+  - elasticsearch updated to 1.4.1
   - go-lang updated to 1.4
 
 ###December 11th, 2014

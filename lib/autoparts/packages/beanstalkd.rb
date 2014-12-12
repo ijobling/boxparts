@@ -2,22 +2,22 @@ module Autoparts
   module Packages
     class Beanstalkd < Package
       name 'beanstalkd'
-      version '1.9'
+      version '1.10'
       description 'Beanstalk: A simple, fast work queue.'
       category Category::DATA_STORES
 
-      source_url 'https://github.com/kr/beanstalkd/archive/v1.9.tar.gz'
-      source_sha1 'a3cdb93d9c7465491c58c8e7a99d63d779067845'
+      source_url 'https://github.com/kr/beanstalkd/archive/v1.10.tar.gz'
+      source_sha1 'bfc0ccf99e15b15eac03ec1d8a57a3aaff143237'
       source_filetype 'tar.gz'
 
       def compile
-        Dir.chdir('beanstalkd-1.9') do
+        Dir.chdir('beanstalkd-1.10') do
           execute 'make'
         end
       end
 
       def install
-        Dir.chdir('beanstalkd-1.9') do
+        Dir.chdir('beanstalkd-1.10') do
           args = [
             "PREFIX=#{prefix_path}"
           ]
