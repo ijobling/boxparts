@@ -273,7 +273,6 @@ This page contains a list of recent updates made to the Codio BoxParts.
     -  ncurses
     -  racket
     -  re2c
-p
     - gringo
     - scons
     
