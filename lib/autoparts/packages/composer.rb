@@ -5,12 +5,12 @@ module Autoparts
   module Packages
     class Composer < Package
       name 'composer'
-      version '1.0.0-20140724'
+      version '1.0.0-20141216'
       description 'Composer: PHP5 Dependency management'
       category Category::DEVELOPMENT_TOOLS
 
       source_url 'https://getcomposer.org/composer.phar'
-      source_sha1 '822dd51b069b8b69f1d93e98e902ef49118f4b7a'
+      #source_sha1 '4907646fcfd22c7daa01bf8d9d3aed16e19e8d8a'
       source_filetype 'php'
 
       depends_on 'php5'

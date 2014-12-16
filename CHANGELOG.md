@@ -3,6 +3,10 @@ Changelog:
 
 This page contains a list of recent updates made to the Codio BoxParts.
 
+###December 16th, 2014
+- **Improvement**
+  - composer updated to the latest dev 1.0
+
 ###December 12th, 2014
 - **Improvement**
   - ack updated to 2.14
