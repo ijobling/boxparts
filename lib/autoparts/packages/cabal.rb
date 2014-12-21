@@ -11,27 +11,38 @@ module Autoparts
       source_filetype 'tar.gz'
 
       depends_on 'ghc'
-
+      
       def compile
         Dir.chdir('cabal-install-1.20.0.2') do
-          execute "./bootstrap.sh"
-          execute "mkdir -p #{bin_path} && cp ~/.cabal/bin/cabal #{bin_path}"
+          pkg_db = "#{Dir.pwd}/package.conf.d"
+          execute "ghc-pkg", "init", pkg_db
+          ENV["EXTRA_CONFIGURE_OPTS"] = "--package-db=#{pkg_db}"
+          ENV["PREFIX"] = Dir.pwd
+          execute "sh", "bootstrap.sh"
         end
       end
 
+      def install
+        bin_path.mkpath
+        Dir.chdir('cabal-install-1.20.0.2') do
+          execute "cp bin/cabal #{bin_path}"
+        end
+      end
+      
       def tips
         <<-EOS.unindent
           Run "cabal update" after installing
             $ cabal update
 
-         Close and open terminal to have go-lang working after the install.
+         Close and open terminal to have cabal working after the install.
          or reload shell with
          . ~/.bash_profile
         EOS
       end
 
       def post_install
-        File.write(env_file, env_content)
+        execute bin_path + 'cabal', 'update'
+        env_file.unlink if env_file.exist?
       end
 
       def post_uninstall
@@ -42,10 +53,10 @@ module Autoparts
         Path.env + 'cabal'
       end
 
-      def env_content
-        <<-EOS.unindent
-          export PATH="$HOME/.cabal/bin:$PATH"
-        EOS
+      def package_envs
+        [
+          'export PATH="$HOME/.cabal/bin:$PATH"'
+        ]
       end
     end
   end
