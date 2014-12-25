@@ -3,6 +3,11 @@ Changelog:
 
 This page contains a list of recent updates made to the Codio BoxParts.
 
+###December 25th, 2014
+- **Improvement**
+  - mono updated to the 3.10.0
+
+
 ###December 16th, 2014
 - **Improvement**
   - composer updated to the latest dev 1.0
