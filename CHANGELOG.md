@@ -3,6 +3,13 @@ Changelog:
 
 This page contains a list of recent updates made to the Codio BoxParts.
 
+###January 5th, 2015
+- **Improvement**
+  - fish updated to 2.1.1
+  - freepascal updated to 2.6.4
+  - freetype updated to 2.5.4
+  - glib updated to 2.43.2
+  
 ###December 25th, 2014
 - **Improvement**
   - mono updated to the 3.10.0
