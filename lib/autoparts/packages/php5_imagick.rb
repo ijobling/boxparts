@@ -11,7 +11,7 @@ module Autoparts
       name 'php5-imagick'
       category Category::WEB_DEVELOPMENT
 
-      version '3.1.2-2'
+      version '3.1.2-3'
       description 'ImageMagick module for php5'
       source_url 'http://pecl.php.net/get/imagick-3.1.2.tgz'
       source_sha1 '7cee88bc8f6f178165c9d43e302d99cedfbb3dff'
