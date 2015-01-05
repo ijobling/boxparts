@@ -15,7 +15,9 @@ This page contains a list of recent updates made to the Codio BoxParts.
   - grails updated to 2.4.4
   - groovy updated to 2.3.8
   - image_magick updated to 6.9.0-3
-
+  - googlecloudsdk updates to 0.9.41
+  
+  
 ###December 25th, 2014
 - **Improvement**
   - mono updated to the 3.10.0
