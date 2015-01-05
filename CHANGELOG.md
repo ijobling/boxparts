@@ -9,7 +9,13 @@ This page contains a list of recent updates made to the Codio BoxParts.
   - freepascal updated to 2.6.4
   - freetype updated to 2.5.4
   - glib updated to 2.43.2
-  
+  - googleappengine updated to 1.19.17
+  - googleappenginego updated to 1.19.7
+  - googleappenginejava updated to 1.19.7
+  - grails updated to 2.4.4
+  - groovy updated to 2.3.8
+  - image_magick updated to 6.9.0-3
+
 ###December 25th, 2014
 - **Improvement**
   - mono updated to the 3.10.0
