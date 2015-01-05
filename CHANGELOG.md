@@ -16,8 +16,17 @@ This page contains a list of recent updates made to the Codio BoxParts.
   - groovy updated to 2.3.8
   - image_magick updated to 6.9.0-3
   - googlecloudsdk updates to 0.9.41
-  
-  
+  - influxdb updated to 0.8.7
+  - jruby updated to 1.7.17
+  - leiningen updated to 2.5.0
+  - libffi updated to 3.2.1
+  - libpcap updated to 1.6.2
+  - libtool updated to 2.4.4
+  - lua updated to 5.2.3
+  - mc updated to 4.8.13
+  - memcached updated to 1.5.21  
+  - phantomjs updated to 1.9.8
+
 ###December 25th, 2014
 - **Improvement**
   - mono updated to the 3.10.0

@@ -18,7 +18,6 @@ module Autoparts
           bin_path.mkpath
           execute "cp", "influxdb", bin_path
           execute "cp", "influxdb-benchmark", bin_path
-          execute "mv", "admin", influxdb_admin_path
         end
       end
 
