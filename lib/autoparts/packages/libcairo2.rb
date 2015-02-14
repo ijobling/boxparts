@@ -9,7 +9,7 @@ module Autoparts
       source_url 'http://cairographics.org/releases/cairo-1.12.18.tar.xz'
       source_sha1 'a76940b58da9c83b8934264617135326c0918f9d'
       source_filetype 'tar.xz'
-      
+
       depends_on 'pixman'
 
       def name_with_version
@@ -25,15 +25,13 @@ module Autoparts
           execute 'make'
         end
       end
-      
+
       def install
         Dir.chdir(name_with_version) do
           execute 'make install'
         end
       end
-      
-      
-      
+
     end
   end
 end

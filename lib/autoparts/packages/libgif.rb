@@ -3,7 +3,7 @@ module Autoparts
     class Libgif < Package
       name 'libgif'
       version '4.1.6'
-      description 'GIFLIB: package of portable tools and library routines for working with GIF images'
+      description 'GIFLIB: a package of portable tools and library routines for working with GIF images'
       category Category::LIBRARIES
 
       source_url 'http://ftp.de.debian.org/debian/pool/main/g/giflib/giflib_4.1.6.orig.tar.gz'
@@ -23,15 +23,13 @@ module Autoparts
           execute 'make'
         end
       end
-      
+
       def install
         Dir.chdir(name_with_version) do
           execute 'make install'
         end
       end
-      
-      
-      
+
     end
   end
 end
