@@ -5,12 +5,12 @@ module Autoparts
   module Packages
     class RustNightly < Package
       name 'rust-nightly'
-      version '0.12.0-nightly-63fe80e1f_2014-10-08'
+      version '1.0.0-nightly-1d00c545e_2015-01-30'
       description 'Rust: A safe, concurrent, practical language'
       category Category::PROGRAMMING_LANGUAGES
 
       source_url 'https://static.rust-lang.org/dist/rust-nightly-x86_64-unknown-linux-gnu.tar.gz'
-      source_sha1 '8be0a910b6adbaeb0cfd315602fb1704e55c84e9'
+      source_sha1 '883fbbd76890823ea8a672f1733f34061ebdd160'
       source_filetype 'tar.gz'
 
       def install

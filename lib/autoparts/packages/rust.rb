@@ -9,12 +9,12 @@ module Autoparts
       description 'Rust: A safe, concurrent, practical language'
       category Category::PROGRAMMING_LANGUAGES
 
-      source_url 'http://static.rust-lang.org/dist/rust-0.12.0-x86_64-unknown-linux-gnu.tar.gz'
-      source_sha1 'af9011e3cdff0f4de81d8d4eefe85d518731b2b1'
+      source_url 'https://static.rust-lang.org/dist/rust-1.0.0-alpha-x86_64-unknown-linux-gnu.tar.gz'
+      source_sha1 'd0965759006d69576d4a4992a788c0cc7c8063fb'
       source_filetype 'tar.gz'
 
       def install
-        Dir.chdir('rust-0.12.0-x86_64-unknown-linux-gnu') do
+        Dir.chdir('rust-1.0.0-alpha-x86_64-unknown-linux-gnu') do
           execute './install.sh', "--prefix=#{prefix_path}"
         end
       end
