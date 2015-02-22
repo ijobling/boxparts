@@ -5,12 +5,12 @@ module Autoparts
   module Packages
     class CargoNightly < Package
       name 'cargo-nightly'
-      version '0.0.1-pre-nightly-3533ff1_2015-01-20'
+      version '0.0.1-pre-nightly-43755c0_2015-02-19'
       description 'Cargo build and dependency manager for Rust'
       category Category::DEVELOPMENT_TOOLS
 
       source_url 'https://static.rust-lang.org/cargo-dist/cargo-nightly-x86_64-unknown-linux-gnu.tar.gz'
-      source_sha1 '9b1f9d57c9a6031113679ec7eb1dd7e259eab8a1'
+      source_sha1 '437d5b89cf7f253fc091993dc4adbca770168c49'
       source_filetype 'tar.gz'
 
       def install
