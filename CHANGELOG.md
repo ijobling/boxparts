@@ -10,7 +10,8 @@ This page contains a list of recent updates made to the Codio BoxParts.
   - tig updated to 2.0.3
   - protobuf updated to 2.6.0
   - r_base updated to 3.1.2
-  - racket updated 6.1.1
+  - racket updated to 6.1.1
+  - fish updated to 2.1.2
 
 ### February 22nd, 2015
 - **Additions**
