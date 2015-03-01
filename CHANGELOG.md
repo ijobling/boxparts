@@ -3,8 +3,14 @@ Changelog:
 
 This page contains a list of recent updates made to the Codio BoxParts.
 
+### March 1st, 2015
+- **Additions**
+  - cppcheck
+- **Improvement**
+  - tig updated to 2.0.3
+
 ### February 22nd, 2015
-- **Additions** 
+- **Additions**
   - lftp
 - **Improvement** 
   - cargo_nightly updated to 0.0.1-pre-nightly-43755c0_2015-02-19 (thanks @adamreid)
