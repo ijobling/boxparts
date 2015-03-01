@@ -8,6 +8,7 @@ This page contains a list of recent updates made to the Codio BoxParts.
   - cppcheck
 - **Improvement**
   - tig updated to 2.0.3
+  - protobuf updated to 2.6.0
 
 ### February 22nd, 2015
 - **Additions**

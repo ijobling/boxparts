@@ -10,13 +10,13 @@ module Autoparts
       category Category::LIBRARIES
 
       def install
-        Dir.chdir('protobuf-2.6.0') do
+        Dir.chdir(name_with_version) do
           execute 'make', 'install'
         end
       end
 
       def compile
-        Dir.chdir('protobuf-2.6.0') do
+        Dir.chdir(name_with_version) do
           args = ["--prefix=#{prefix_path}"]
           execute './configure', *args
           execute 'make'
