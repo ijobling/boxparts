@@ -1,7 +1,6 @@
 ---
 title: Building your own Box Part
 files: []
-editable: true
 layout: 2-panels-tree
 
 ---
@@ -11,7 +10,7 @@ Building your own Codio Box Part is easy and you get the huge benefit that in an
 parts install my_new_box_part
 ```
 
-#Using this Codio Guide
+# Using this Codio Guide
 This Guide explains how to develop and publish your own Box Parts. You can navigate between sections in one of two ways
 
 - using the Table of Contents (opened and closed using the Hamburger icon in the header bar)
@@ -19,7 +18,6 @@ This Guide explains how to develop and publish your own Box Parts. You can navig
 ---
 title: Development Process Overview
 files: []
-editable: false
 layout: ""
 
 ---
@@ -27,7 +25,7 @@ A Box Part is simply a snippet of Ruby code. You do not have to be a Ruby Ninja 
 
 You will have already forked the Box Parts repo on GitHub and loaded it into Codio. The following steps describe the general development process
 
-#Preparation
+# Preparation
 1. Create a new branch (Git is already fully installed) for your new Part.
 1. Create a new ruby package file in `lib/autoparts/packages`. You may want to look at the existing ones as examples.
 
@@ -39,7 +37,7 @@ You will have already forked the Box Parts repo on GitHub and loaded it into Cod
 1. Define message `tips` method. Allows you to define the message output to the terminal window once the installation process is successfully completed.
 1. Define post `uninstall` and `purge` methods. Codio will remove your installed files automatically but the `post_uninstall` and `purge` methods allow you to control the removal process.
 
-#Testing
+# Testing
 Now your package file is completed, you should test it and ensure that all relevant Box Parts commands are working (install, uninstall, start, stop, purge, status). You should also ensure that your installed package runs as expected.
 
 #Publishing
@@ -47,7 +45,7 @@ At this point, your new Box Part will only work on this Codio project and will n
 
 In order to publish it, you will need to push the repo back to GitHub and send us a [pull request](https://help.github.com/articles/creating-a-pull-request).
 
-#Codio Steps
+# Codio Steps
 Your new Box Part will be checked and approved by Codio. 
 
 We perform these checks as it us important to us that the quality of the Box Parts library is maintained at a high level and to examine them for potential security issues. Once approved,
@@ -63,7 +61,6 @@ We do the above steps in order to avoid your Box Part needing to be compiled eac
 ---
 title: Dev setup script
 files: []
-editable: false
 layout: ""
 
 ---
@@ -80,7 +77,6 @@ files:
     action: open
     ref: module Autoparts
     lineCount: 3
-editable: true
 layout: ""
 
 ---
@@ -103,13 +99,12 @@ files:
     action: open
     ref: "name 'mysql'"
     lineCount: 7
-editable: false
 layout: ""
 
 ---
 The following class properties are required by your Box Part 
 
-#name
+# name
 Please note the following aspects of the name
 
 - it must match the file name of your package
@@ -117,13 +112,13 @@ Please note the following aspects of the name
 - it must be unique across all packages 
 
 
-#version
+# version
 The version of the component that you are installing
 
-#description
+# description
 A brief description of the Box Part. Make it just long enough to be meaningful when displayed in the parts listing.
 
-#category
+# category
 A constant that associates this Box Part with a component category. [Click here](open_file lib/autoparts/category.rb) to view the `lib/autoparts/category.rb` file where these constants are defined.
 ---
 title: Source
@@ -132,7 +127,6 @@ files:
     action: open
     ref: source_url
     lineCount: 10
-editable: false
 layout: ""
 
 ---
@@ -142,7 +136,7 @@ This is where you specify the remote location of the component you want to insta
 - `source_sha1` '06e1d856cfb1f98844ef92af47d4f4f7036ef294'
 - `source_filetype` - should be `tar.gz` or `zip`
 
-#Understanding the process
+# Understanding the process
 When you run `parts install package_name` Codio checks whether the component (version specific) exists in the Codio binary store. If it exists, then it will be downloaded and installed (in the `~/.parts/packages/package_name/version`) without executing the Compilation or Installation steps (described in upcoming sections).
 
 Your package will only be present in the binary store once we have approved your Pull request, as described in the 'Development Process Overview' section, and then uploaded your compiled binary to the Codio binary store.
@@ -155,7 +149,7 @@ It is advisable to specify a fixed version of a component rather than the latest
 
 Some components will provide a directory structure where specific versions are clearly listed. Other components may be available as Git `tags`, in which case you would select the tag in GitHub or any other platform and then look for the Download URL.
 
-#SHA1 hash
+# SHA1 hash
 If the component does not list the SHA1 hash for you then you will need to manually download the component and calculate the hash yourself.
 
 You can do this as follows from the command line.
@@ -178,7 +172,6 @@ files:
     action: open
     ref: depends_on
     lineCount: 1
-editable: false
 layout: ""
 
 ---
@@ -200,7 +193,6 @@ files:
     action: open
     ref: "Dir.chdir('mysql-5.6.13')"
     lineCount: 1
-editable: false
 layout: ""
 
 ---
@@ -227,7 +219,6 @@ ls -al
 ---
 title: Methods
 files: []
-editable: false
 layout: ""
 
 ---
@@ -239,7 +230,7 @@ When you install a package, your files will end up in the following folder struc
 
 ~/.parts/packages/package_name/version
 
-#Package Methods
+# Package Methods
 It is worth you being aware of the following methods
 
 - **user** : the Codio user name
@@ -254,7 +245,7 @@ It is worth you being aware of the following methods
 - **libexec_path** : 
 - **share_path** :
 
-#Global Path Methods
+# Global Path Methods
 You can also reference Box Parts system paths that are not a part of your package to store user related data. Anything placed in these paths will not be removed automatically when you run `parts uninstall`.
 
 - **Path.bin**
@@ -273,7 +264,6 @@ files:
     action: open
     ref: def compile
     lineCount: 22
-editable: false
 layout: ""
 
 ---
@@ -294,7 +284,6 @@ files:
     action: open
     ref: def install
     lineCount: 9
-editable: false
 layout: ""
 
 ---
@@ -307,13 +296,12 @@ files:
     action: open
     ref: def post_install
     lineCount: 14
-editable: false
 layout: ""
 
 ---
 The Post Installation step is called once the full installation is completed and carries out tasks such as installing a default database or modifying configuration files.
 
-#Where to put your config files
+# Where to put your config files
 Once your installation is complete, 
 
 - Configuration files should be placed in `Path.etc` (e.g. `~/.parts/etc`) or `Path.etc + name` (e.g. `~/.parts/etc/postgresql`).
@@ -326,7 +314,6 @@ files:
     action: open
     ref: def required_env
     lineCount: 5
-editable: false
 layout: ""
 
 ---
@@ -338,7 +325,6 @@ files:
     action: open
     ref: def start
     lineCount: 13
-editable: false
 layout: ""
 
 ---
@@ -360,7 +346,6 @@ files:
     action: open
     ref: def tips
     lineCount: 12
-editable: false
 layout: ""
 
 ---
@@ -374,16 +359,15 @@ files:
     action: open
     ref: def purge
     lineCount: 3
-editable: false
 layout: ""
 
 ---
 Box Parts allows a part to be uninstalled using `parts uninstall part_name` or `parts purge part_name`.
 
-#Uninstall
+# Uninstall
 The uninstallation is handled automatically by Box Parts and removes the entire package folder. 
 
 It will not remove any data outside the package folder. If you want to perform custom actions, define them in the `post_uninstall` method.
 
-#Purge
+# Purge
 The purge process allows you to remove any user data that is not removed by `parts uninstall`. 
