@@ -2,7 +2,7 @@ module Autoparts
   module Packages
     class Cppcheck < Package
       name 'cppcheck'
-      version '1.68'
+      version '1.68-1'
       description 'Cppcheck: Static source code analysis tool for C and C++ code.'
       category Category::DEVELOPMENT_TOOLS
 
@@ -16,8 +16,8 @@ module Autoparts
           "DESTDIR=#{prefix_path}",
           "CFGDIR=#{prefix_path}/cfg"
         ]
-        
-        Dir.chdir(name_with_version) do   
+
+        Dir.chdir('cppcheck-1.68') do
           execute 'make', *args
         end
       end
@@ -28,8 +28,8 @@ module Autoparts
           "DESTDIR=#{prefix_path}",
           "CFGDIR=/cfg"
         ]
-        
-        Dir.chdir(name_with_version) do 
+
+        Dir.chdir('cppcheck-1.68') do
           execute 'make', 'install', *args
         end
       end
