@@ -12,6 +12,7 @@ This page contains a list of recent updates made to the Codio BoxParts.
   - r_base updated to 3.1.2
   - racket updated to 6.1.1
   - fish updated to 2.1.2
+  - re2c updated to 0.14
 
 ### February 22nd, 2015
 - **Additions**
