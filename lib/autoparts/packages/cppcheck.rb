@@ -12,9 +12,9 @@ module Autoparts
 
       def compile
         args = [
-          "PREFIX=#{prefix_path}",
-          "SRCDIR=build",
-          "CFGDIR=cfg"
+          "PREFIX=",
+          "DESTDIR=#{prefix_path}",
+          "CFGDIR=#{prefix_path}/cfg"
         ]
         
         Dir.chdir(name_with_version) do   
@@ -24,7 +24,9 @@ module Autoparts
 
       def install
         args = [
-          "PREFIX=#{prefix_path}"
+          "PREFIX=",
+          "DESTDIR=#{prefix_path}",
+          "CFGDIR=/cfg"
         ]
         
         Dir.chdir(name_with_version) do 
