@@ -15,18 +15,10 @@ module Autoparts
 
       def install
         prefix_path.mkpath
-        execute 'mv', archive_filename, prefix_path
-
-        puts "=> Downloading the boot script..."
-        download 'https://github.com/boot-clj/boot/releases/download/2.0.0-rc11/boot.sh', tmp_boot_script_path, '4ba53216f97b9bbf5de2064eaa0f5d6cf9a8e378'
 
         bin_path.mkpath
-        execute 'mv', tmp_boot_script_path, boot_executable_path
+        execute 'mv', archive_filename, boot_executable_path
         execute 'chmod', '0755', boot_executable_path
-      end
-
-      def tmp_boot_script_path
-        Path.tmp + "boot"
       end
 
       def boot_executable_path
