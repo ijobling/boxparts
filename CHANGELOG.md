@@ -7,6 +7,11 @@ This page contains a list of recent updates made to the Codio BoxParts.
 - **Additions**
   - jq
   - boot
+- **Improvement**
+  - tomcat updated to 8.0.20
+  - the_silver_searcher to 0.29.1
+  - swig to 3.0.5
+  - setuptools to 12.3
 
 ### March 1st, 2015
 - **Additions**
