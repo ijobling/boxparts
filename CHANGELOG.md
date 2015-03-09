@@ -3,7 +3,7 @@ Changelog:
 
 This page contains a list of recent updates made to the Codio BoxParts.
 
-### March 7st, 2015
+### March 7th, 2015
 - **Additions**
   - jq
   - boot
