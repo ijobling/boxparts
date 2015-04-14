@@ -3,6 +3,13 @@ Changelog:
 
 This page contains a list of recent updates made to the Codio BoxParts.
 
+### April 14th, 2015
+- **Additions**
+  - luarocks
+- **Improvement**
+  - openldap to 2.4.40
+  - berkeley_db to 6.1.23
+
 ### March 7th, 2015
 - **Additions**
   - jq
