@@ -9,6 +9,7 @@ This page contains a list of recent updates made to the Codio BoxParts.
 - **Improvement**
   - openldap to 2.4.40
   - berkeley_db to 6.1.23
+  - pypy to 2.4.0
 
 ### March 7th, 2015
 - **Additions**
