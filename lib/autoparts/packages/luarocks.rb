@@ -13,31 +13,36 @@ module Autoparts
       source_sha1 'e2de00f070d66880f3766173019c53a23229193d'
       source_filetype 'tar.gz'
 
+      depends_on "lua"
+
       def compile
         Dir.chdir('luarocks-2.2.0') do
           execute './configure', "--prefix=#{prefix_path}"
         end
       end
-      
-      
+
       def install
         Dir.chdir('luarocks-2.2.0') do
-          execute 'make build' 
+          execute 'make build'
           execute 'make install'
         end
       end
 
+      def required_env
+        [
+          "export LUA_PATH=#{prefix_path}/share/lua/5.2/?.lua",
+          "export LUA_CPATH=#{prefix_path}/lib/lua/5.2/?.so",
+        ]
+      end
+
       def tips
         <<-STR.unindent
-        The following paths need to be appended for lua to find the installed rocks:
-        LUA_PATH - $HOME/.parts/packages/luarocks/2.2.0/share/lua/5.2/?.lua
-        LUA_CPATH - $HOME/.parts/packages/luarocks/2.2.0/lib/lua/5.2/?.so
-        
-        This can be done with this script: http://git.io/pt1O
-        
+         Close and open terminal to have luarocks working after the install.
+         or reload shell with
+         . ~/.bash_profile
         STR
       end
-      
+
     end
   end
 end
