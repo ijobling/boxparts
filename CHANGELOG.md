@@ -11,6 +11,8 @@ This page contains a list of recent updates made to the Codio BoxParts.
   - gringo to 4.4.0
   - Racket to 6.1.1
   - scons to 2.3.4
+  - valgrind to 3.10.1
+  - tig to 2.0.3
 
 ### April 14th, 2015
 - **Additions**
