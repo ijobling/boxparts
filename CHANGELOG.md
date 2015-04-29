@@ -8,6 +8,7 @@ This page contains a list of recent updates made to the Codio BoxParts.
   - [hub](https://hub.github.com/)
 - **Improvement**
   - clasp to 3.1.1
+  - gringo to 4.4.0
 
 ### April 14th, 2015
 - **Additions**
