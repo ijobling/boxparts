@@ -13,6 +13,8 @@ This page contains a list of recent updates made to the Codio BoxParts.
   - scons to 2.3.4
   - valgrind to 3.10.1
   - tig to 2.0.3
+  - ZeroMQ to 4.0.5
+  - PHPMyAdmin to 4.3.10
 
 ### April 14th, 2015
 - **Additions**
