@@ -15,6 +15,11 @@ This page contains a list of recent updates made to the Codio BoxParts.
   - tig to 2.0.3
   - ZeroMQ to 4.0.5
   - PHPMyAdmin to 4.3.10
+  - RabbitMQ to 3.4.4
+  - RethinkDB to 1.15.3-1
+  - MongoDB to 3.0.0
+  - Scala to 2.11.6
+  - Phalcon to 2.0.0
 
 ### April 14th, 2015
 - **Additions**
