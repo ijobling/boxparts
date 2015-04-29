@@ -3,6 +3,10 @@ Changelog:
 
 This page contains a list of recent updates made to the Codio BoxParts.
 
+### April 29th, 2015
+- **Additions**
+  - [hub](https://hub.github.com/)
+
 ### April 14th, 2015
 - **Additions**
   - luarocks
