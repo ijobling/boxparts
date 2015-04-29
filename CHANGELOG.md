@@ -9,6 +9,7 @@ This page contains a list of recent updates made to the Codio BoxParts.
 - **Improvement**
   - clasp to 3.1.1
   - gringo to 4.4.0
+  - Racket to 6.1.1
 
 ### April 14th, 2015
 - **Additions**
