@@ -2,18 +2,18 @@ module Autoparts
   module Packages
     class Rethinkdb < Package
       name 'rethinkdb'
-      version '1.15.3-1'
+      version '2.0.1'
       description 'RethinkDB: An open-source distributed database built with love.'
       category Category::DATA_STORES
 
-      source_url 'http://download.rethinkdb.com/dist/rethinkdb-1.15.3-1.tgz'
-      source_sha1 '16b6ff1eedd592287b841c0c5fc0bae3ab896a44'
+      source_url 'http://download.rethinkdb.com/dist/rethinkdb-2.0.1.tgz'
+      source_sha1 'fbd19c82f44f897e4c43716b4447226c2f1bf66b'
       source_filetype 'tgz'
 
       depends_on 'protobuf'
       
       def compile
-        Dir.chdir("rethinkdb-1.15.3-1") do
+        Dir.chdir("rethinkdb-2.0.1") do
           args = [
             "--allow-fetch",
             "--prefix=#{prefix_path}",
@@ -66,7 +66,7 @@ module Autoparts
       end
       
       def install
-        Dir.chdir("rethinkdb-1.15.3-1") do
+        Dir.chdir("rethinkdb-2.0.1") do
           execute 'make', 'install'
         end
       end
