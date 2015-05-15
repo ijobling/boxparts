@@ -5,16 +5,16 @@ module Autoparts
   module Packages
     class Rust < Package
       name 'rust'
-      version '0.12.0'
+      version '1.0.0'
       description 'Rust: A safe, concurrent, practical language'
       category Category::PROGRAMMING_LANGUAGES
 
-      source_url 'https://static.rust-lang.org/dist/rust-1.0.0-alpha-x86_64-unknown-linux-gnu.tar.gz'
-      source_sha1 'd0965759006d69576d4a4992a788c0cc7c8063fb'
+      source_url 'https://static.rust-lang.org/dist/rust-1.0.0-x86_64-unknown-linux-gnu.tar.gz'
+      source_sha1 '87f7844bb4485a1adeb01456bd5aa999d40e5f65'
       source_filetype 'tar.gz'
 
       def install
-        Dir.chdir('rust-1.0.0-alpha-x86_64-unknown-linux-gnu') do
+        Dir.chdir('rust-1.0.0-x86_64-unknown-linux-gnu') do
           execute './install.sh', "--prefix=#{prefix_path}"
         end
       end
