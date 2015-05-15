@@ -18,16 +18,22 @@ module Autoparts
       def common_version
         "3.4"
       end
-      
+
       # requires a fix on version update
       def pre_compile
         execute 'sed', '-i', "1055 c\\        sqlite_inc_paths = [ '/usr/include', '#{Path.include}', ", 'setup.py'
       end
-      
+
       def python_version
         "Python-3.4.2"
-      end    
-        
+      end
+
+      def required_env
+        [
+          "export PATH=${PATH}:#{bin_path}",
+        ]
+      end
+
       def pre_archive
           # do not remove pip and other tools
       end

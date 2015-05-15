@@ -3,7 +3,70 @@ Changelog:
 
 This page contains a list of recent updates made to the Codio BoxParts.
 
-###January 5th, 2015
+### April 29th, 2015
+- **Additions**
+  - [hub](https://hub.github.com/)
+- **Improvement**
+  - clasp to 3.1.1
+  - gringo to 4.4.0
+  - Racket to 6.1.1
+  - scons to 2.3.4
+  - valgrind to 3.10.1
+  - tig to 2.0.3
+  - ZeroMQ to 4.0.5
+  - PHPMyAdmin to 4.3.10
+  - RabbitMQ to 3.4.4
+  - RethinkDB to 1.15.3-1
+  - MongoDB to 3.0.0
+  - Scala to 2.11.6
+  - Phalcon to 2.0.0
+
+### April 14th, 2015
+- **Additions**
+  - luarocks
+- **Improvement**
+  - openldap to 2.4.40
+  - berkeley_db to 6.1.23
+  - pypy to 2.4.0
+
+### March 7th, 2015
+- **Additions**
+  - jq
+  - boot
+- **Improvement**
+  - tomcat updated to 8.0.20
+  - the_silver_searcher to 0.29.1
+  - swig to 3.0.5
+  - setuptools to 12.3
+
+### March 1st, 2015
+- **Additions**
+  - cppcheck
+- **Improvement**
+  - tig updated to 2.0.3
+  - protobuf updated to 2.6.0
+  - r_base updated to 3.1.2
+  - racket updated to 6.1.1
+  - fish updated to 2.1.2
+  - re2c updated to 0.14
+
+### February 22nd, 2015
+- **Additions**
+  - lftp
+- **Improvement** 
+  - cargo_nightly updated to 0.0.1-pre-nightly-43755c0_2015-02-19 (thanks @adamreid)
+  - rust updated to 1.0.0-alpha2 (thanks @adamreid)
+  - rust_nightly updated to 1.0.0-nightly-522d09dfe_2015-02-19' (thanks @adamreid)
+
+### February 16th, 2015
+- **Additions**
+  - frcon
+- **Improvement**
+  - libcairo2 updated
+  - libgif updated
+  - pixman updated
+  
+###  January 5th, 2015
 - **Improvement**
   - fish updated to 2.1.1
   - freepascal updated to 2.6.4
@@ -27,16 +90,16 @@ This page contains a list of recent updates made to the Codio BoxParts.
   - memcached updated to 1.5.21  
   - phantomjs updated to 1.9.8
 
-###December 25th, 2014
+### December 25th, 2014
 - **Improvement**
   - mono updated to the 3.10.0
 
 
-###December 16th, 2014
+### December 16th, 2014
 - **Improvement**
   - composer updated to the latest dev 1.0
 
-###December 12th, 2014
+### December 12th, 2014
 - **Improvement**
   - ack updated to 2.14
   - apr_util updated to 1.5.4
@@ -53,7 +116,7 @@ This page contains a list of recent updates made to the Codio BoxParts.
   - elasticsearch updated to 1.4.1
   - go-lang updated to 1.4
 
-###December 11th, 2014
+### December 11th, 2014
 - **Improvement**
   - dart updated to 1.8.3
   - erlang updated to 17.3
@@ -63,24 +126,24 @@ This page contains a list of recent updates made to the Codio BoxParts.
   - scala updated to 2.11.4
   - sbt updated to 0.13.7
   
-###December 4th, 2014
+### December 4th, 2014
 - **Additions**
   - rustup (thanks @sazzer)
 
-###November 29th, 2014
+### November 29th, 2014
 - **Additions**
   - GNU mpfr (thanks @moollaza)
 - **Improvement**
   - oCaml updated to 4.02.1
   - OPAM updated to 1.2.0
 
-###November 11th, 2014
+### November 11th, 2014
 - **Improvement**
   - googleappengine updated to 1.9.15
   - googleappenginego updated to 1.9.15
   - googleappenginejava updated to 1.9.15
   
-###November 5th, 2014
+### November 5th, 2014
 - **Additions**
   - swi_prolog
 - **Improvement**
@@ -89,60 +152,60 @@ This page contains a list of recent updates made to the Codio BoxParts.
   - googleappenginego updated to 1.9.14
   - googlecloudsdk updated to 0.9.35
   
-###October 30th, 2014
+### October 30th, 2014
 - **Improvement**
   - meteor updated to 1.0
 
-###October 28th, 2014
+### October 28th, 2014
 - **Improvement**
   - maven updated to 3.2.3 (thanks @tbodt)
   
-###October 23rd, 2014
+### October 23rd, 2014
 - **Additions**
   - gdal (thanks @22kaj22)
   
-###October 21st, 2014
+### October 21st, 2014
 - **Additions**
   - freetds (thanks @jondkinney)
   
-###October 20th, 2014
+### October 20th, 2014
 - **Additions**
   - php5-gettext
   - taglib (thanks @joeyfromspace)
 
-###October 19th, 2014
+### October 19th, 2014
 - **Improvement**
   - adminer updated to 4.1.0 (thanks @nblackburn)
   - rethinksv updated to 1.15.1 (thanks @nblackburn)
 
-###October 15th, 2014
+### October 15th, 2014
 - **Additions**
   - valgrind (thanks @jesserayadkins)
 
-###October 10th, 2014
+### October 10th, 2014
 - **Improvement**
   - cargo-nightly updated to 0.0.1-pre-nightly-861c07f_2014-10-07 (thanks @adamreid)
   - rust updated to 0.12.0 (thanks @adamreid)
   - rust-nightly updated to 0.12.0-nightly-63fe80e1f_2014-10-08 (thanks @adamreid)
   
-###September 24th, 2014
+### September 24th, 2014
 - **Additions**
   - gitftp
   
-###September 18th, 2014
+### September 18th, 2014
 - **Additions**
   - cargo-nightly (thanks @adamreid)
 - **Improvement**
 	- meteor updated to 0.9.2.1
 	- rust-nightly updated to 0.12.0-pre-nightly-0e784e168_2014-09-16 (thanks @adamreid)
   
-###September 17th, 2014
+### September 17th, 2014
 - **Improvement**
   - googleappengine updated to 1.9.11 
   - googleappenginego updated to 1.9.11
   - googleappenginejava updated to 1.9.11 (thanks for all @eMxyzptlk)
 
-###September 11th, 2014
+### September 11th, 2014
 - **Additions**
   - freetds
   - php_mssql
@@ -151,7 +214,7 @@ This page contains a list of recent updates made to the Codio BoxParts.
 	- pip fix PATH export
   - neko add export to LD_LIBRARY_PATH
 
-###September 9th, 2014
+### September 9th, 2014
 - **Additions**
   - haxe
   - neko
@@ -159,13 +222,13 @@ This page contains a list of recent updates made to the Codio BoxParts.
 - **Improvement**
 	- postgresql updated to 9.3.5
 
-###September 8th, 2014
+### September 8th, 2014
 - **Improvement**
   - pip updated to 1.5.6
   - setuptools updated to 5.7
   - virtualenv updated to 1.11.6
   
-###September 4th, 2014
+### September 4th, 2014
 - **Improvement**
 	- python2 updated to 2.7.8
 - **Fixed**
@@ -173,33 +236,33 @@ This page contains a list of recent updates made to the Codio BoxParts.
 - **Additions**
 	- php5-phalcon (thanks @leob)
 
-###August 8th, 2014
+### August 8th, 2014
 - **Improvement**
 	-	meteor updated to 0.8.3
 
-###August 6th, 2014
+### August 6th, 2014
 - **Improvement**
 	-	grails updated to 2.4.3
   
-###August 2nd, 2104
+### August 2nd, 2104
 - **Improvement**
 	-	googlecloudsdk updated to 0.9.28
 
-###July 31st, 2014
+### July 31st, 2014
 - **Improvement**
 	-	python3 updated to 3.4.1-1
 
-###July 29th, 2014
+### July 29th, 2014
 - **Additions**
 	- php5-sockets
 - **Improvement**
 	- php (and associated packages) updated to 5.5.15 (thanks @Garbee)
 
-###July 23rd, 2014
+### July 23rd, 2014
 - **Improvement**
 	- composer updated to 1.0.0-20140724
 
-###July 17th, 2014
+### July 17th, 2014
 - **Fixed**:
   - go installation issues (thanks @mikeroosa)
   - elasticbeanstalk package updated
@@ -207,7 +270,7 @@ This page contains a list of recent updates made to the Codio BoxParts.
 	- ghc updated to 7.8.3
   
   
-###July 14th, 2014
+### July 14th, 2014
 - **Additions**: 
   - enchant
   - php5-apcu
@@ -215,13 +278,13 @@ This page contains a list of recent updates made to the Codio BoxParts.
 - **Improvement**:
   - go updated to 1.3
   
-###July 5th, 2014
+### July 5th, 2014
 - **Additions**: 
   - tree (thanks @juanpabloaj)
 - **Improvement**:
   - rust updated to 0.11 (thanks @adamreid)
 
-###June 26th, 2014
+### June 26th, 2014
 - **Additions**: 
   - rust-nightly  (thanks @adamreid)
   - snappy
@@ -229,7 +292,7 @@ This page contains a list of recent updates made to the Codio BoxParts.
 - **Improvement**:
   - rust updated to 0.10 (thanks @adamreid)
 
-###June 23rd, 2014
+### June 23rd, 2014
 - **Additions**:
   - couchdb
   - ctags
@@ -265,11 +328,11 @@ This page contains a list of recent updates made to the Codio BoxParts.
   - python3 updated to 3.4.1
   - tomcat updated to 7.0.54
     
-###June 13th, 2014
+### June 13th, 2014
 - **Improvements**:
 	- postgresql updated to 9.3.4
     
-###June 11th, 2014
+### June 11th, 2014
 - **Additions**:
     - jruby
     - libmemcached
@@ -278,7 +341,7 @@ This page contains a list of recent updates made to the Codio BoxParts.
     - mongodb updated to 2.6.1
     - php5-mongo updated to 1.5.3
     
-####May 19th, 2014
+### May 19th, 2014
 - **Improvements**:
     - aspcud updated to 1.9.0-1.
     - opam updated to 1.1.1-20140519.
@@ -288,7 +351,7 @@ This page contains a list of recent updates made to the Codio BoxParts.
     - gringo
     - scons
     
-####May 5th 2014
+### May 5th 2014
 - **Improvements**: 
     -  python3 updated to 3.4.0. 
     -  composer updated to 1.0.0-20140501.  

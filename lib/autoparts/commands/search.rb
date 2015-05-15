@@ -34,7 +34,6 @@ module Autoparts
               name: name,
               version: package.version,
               category: package.category,
-              autostart: autostart_packages.include?(name),
               description: package.description 
             }
             if package.respond_to? :running?

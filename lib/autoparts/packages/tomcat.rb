@@ -2,17 +2,17 @@ module Autoparts
   module Packages
     class Tomcat < Package
       name 'tomcat'
-      version '7.0.54'
+      version '8.0.20'
       description 'Apache Tomcat: an open source software implementation of the Java Servlet and JavaServer Pages technologies.'
       category Category::WEB_DEVELOPMENT
 
-      source_url 'http://www.apache.org/dist/tomcat/tomcat-7/v7.0.54/bin/apache-tomcat-7.0.54.tar.gz'
-      source_sha1 'b0db037619c5c10cbe8d17f7a1492fd759fa5805'
+      source_url 'http://www.apache.org/dist/tomcat/tomcat-8/v8.0.20/bin/apache-tomcat-8.0.20.tar.gz'
+      source_sha1 'f27e57423a5728216dfe0d38d6f7f4dc03ffee97'
       source_filetype 'tar.gz'
 
       def install
         prefix_path.mkpath
-        Dir.chdir('apache-tomcat-7.0.54') do
+        Dir.chdir('apache-tomcat-8.0.20') do
           execute 'cp', '-r', '.', prefix_path.to_s
         end
       end

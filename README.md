@@ -5,7 +5,7 @@ Box Parts is a package manager for your Codio Boxes. It provides a simple comman
 
 Box Parts is used by [Codio](https://codio.com) to provide user-installed binary packages for every Codio project and is pre-installed on every Codio Box. Normal usage of Box Parts is described here [https://codio.com/docs/boxes/installsw/box-parts](https://codio.com/docs/boxes/installsw/box-parts/)
 
-#Developing your own Box Parts
+# Developing your own Box Parts
 To configure your Codio Box for Box Part development, please follow these steps
 
 1. Fork this repo into your own account : [https://github.com/codio/boxparts](https://github.com/codio/boxparts)
