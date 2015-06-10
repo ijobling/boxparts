@@ -27,7 +27,7 @@ module Autoparts
       def vnc_path
         prefix_path + 'noVNC'
       end
-        
+
       def start
         # start Xvfb
         xvfb_command = [
@@ -36,31 +36,32 @@ module Autoparts
           '--server-args="-screen 0 800x600x24"',
           '--auto-servernum',
           '--server-num=1',
-          'openbox' 
+          'openbox'
         ].join(' ')
         start_service xvfb_command, xPidFile
-        
+
         ENV['DISPLAY'] = ":1"
         #ENV['XAUTHORITY'] = "#{xAuthorityFile}",
-        
+
         vnc_command = [
           'x11vnc',
           '-listen', 'localhost',
           '-noncache',
-          '-shared'
+          '-shared',
+          '-forever'
           ]
          start_service vnc_command, vncPidFile
         start_service [proxy_path.to_s, '--listen', '9500'].join(' '), proxyPidFile
       end
-      
+
       def logFile
         '/tmp/xserver.log'
       end
-      
+
       def proxy_path
         vnc_path + 'utils' + 'launch.sh'
       end
-      
+
       def start_service(cmd, pidFile)
         pidDir.mkpath
         pid = spawn *cmd, :out => logFile.to_s, :err => logFile.to_s
@@ -68,7 +69,7 @@ module Autoparts
         File.write pidFile,  pid
         sleep(1);
       end
-      
+
       def running?
         if File.exists?(xPidFile)
           pid = File.read(xPidFile).strip
@@ -79,8 +80,7 @@ module Autoparts
         end
         false
       end
-      
-      
+
       def stop
         stop_service(proxyPidFile, 'noVNC')
         stop_service(vncPidFile, 'x11vnc')
@@ -88,7 +88,7 @@ module Autoparts
         # ruby is stupid, have to kill process by name :(
         execute 'ps| grep openbox| awk \'{print $1}\' | xargs -r kill'
       end
-      
+
       def stop_service(pidFile, service)
         if File.exists?(pidFile)
           pid = File.read(pidFile).strip
@@ -105,15 +105,15 @@ module Autoparts
           "export XAUTHORITY=#{xAuthorityFile}"
         ]
       end
-      
+
       def pidDir
         Path.var + name + "run"
       end
-      
+
       def xAuthorityFile
         pidDir + 'codio.auth'
       end
-      
+
       def xPidFile
         pidDir + 'xfvb.pid'
       end
@@ -125,14 +125,14 @@ module Autoparts
       def proxyPidFile
         pidDir + 'noVNC.pid'
       end
-      
+
       def tips
         <<-EOS.unindent
         Run `parts start xserver` to start XServer and vnc server.
           # parts start xserver
-        
+
         Important! Reopen your terminal to apply XServer environment variables for UI apps.
-        
+
         Open your SSL Box preview url to connect to the screen.
         EOS
       end
