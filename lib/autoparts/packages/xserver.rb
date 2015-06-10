@@ -86,7 +86,7 @@ module Autoparts
         stop_service(vncPidFile, 'x11vnc')
         stop_service(xPidFile, 'xvfb')
         # ruby is stupid, have to kill process by name :(
-        execute 'ps| grep openbox| awk \'{print $1}\' | xargs -r kill'
+        execute 'ps | grep "Xvfb" | awk \'{print $1}\' | xargs -r kill'
       end
 
       def stop_service(pidFile, service)
