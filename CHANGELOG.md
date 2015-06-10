@@ -3,6 +3,12 @@ Changelog:
 
 This page contains a list of recent updates made to the Codio BoxParts.
 
+### April 29th, 2015
+- **Additions**
+  - xserver 0.1 beta
+- **Improvement**
+  - python3 to 3.4.3
+
 ### Jun 2nd, 2015
 - **Improvement**
   - googleappengine to 1.9.21
