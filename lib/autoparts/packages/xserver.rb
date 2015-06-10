@@ -2,12 +2,12 @@ module Autoparts
   module Packages
     class Xserver < Package
       name 'xserver'
-      version '0.01'
+      version '0.02'
       description 'Xserver: set of tools to run UI apps in Codio. (Beta)'
       category Category::UTILITIES
 
-      source_url 'https://github.com/kanaka/noVNC/archive/master.zip'
-      source_sha1 '94b2c2a1a3c9d382b64cbfab52b1001a97406fae'
+      source_url 'https://github.com/MaximKraev/noVNC/archive/master.zip'
+      source_sha1 '9865cb853dea30ee6c479c8a5b852b9578ad64fd'
       source_filetype 'zip'
 
       def install
