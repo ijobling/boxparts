@@ -6,13 +6,13 @@ module Autoparts
       description 'Xserver: set of tools to run UI apps in Codio. (Beta)'
       category Category::UTILITIES
 
-      source_url 'https://github.com/MaximKraev/noVNC/archive/master.zip'
-      source_sha1 '9865cb853dea30ee6c479c8a5b852b9578ad64fd'
+      source_url 'https://github.com/MaximKraev/noVNC/archive/codio.zip'
+      source_sha1 '92b80e834594a03d9681ba52d18b81481053c3d6'
       source_filetype 'zip'
 
       def install
         prefix_path.mkpath
-        Dir.chdir('noVNC-master') do
+        Dir.chdir('noVNC-codio') do
           execute 'cp', '-R', './', vnc_path
         end
         Dir.chdir(vnc_path + 'utils') do
