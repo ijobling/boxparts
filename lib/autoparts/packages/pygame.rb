@@ -16,13 +16,20 @@ module Autoparts
       def install
         prefix_path.mkpath
         Dir.chdir("pygame-1.9.1release") do
-          execute 'sed', '-i', "s|raw_input|input|g", 'setup.py'
+          execute 'sed -i "s|raw_input|input|g" setup.py'
           execute 'python3', 'setup.py', 'install'
         end
         required_files.each do |f|
           execute "mv",
             python_dependency.site_packages + f,
             prefix_path + f
+        end
+      end
+
+      def post_uninstall
+        required_files.each do |f|
+          path = python_dependency.site_packages + f
+          FileUtils.rm_rf(path) if path.exist? 
         end
       end
 
